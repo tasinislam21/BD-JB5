@@ -1,8 +1,5 @@
 package org.bdj;
 
-import java.io.*;
-import java.net.*;
-import java.lang.*;
 import java.lang.reflect.*;
 
 import java.awt.BorderLayout;
@@ -12,7 +9,6 @@ import org.havi.ui.HScene;
 import org.havi.ui.HSceneFactory;
 
 import org.bdj.sandbox.Exploit;
-import org.bdj.sandbox.ExploitInternal;
 
 public class InitXlet implements Xlet {
     private HScene scene;
@@ -22,6 +18,9 @@ public class InitXlet implements Xlet {
     private InternalJarLoader internalJarLoader;
     private Thread internalJarLoaderThread;
     private final String jarLoaderThreadName = "JarLoader";
+    
+    private final String versionString = "BD-JB5 2.0 by Gezine";
+    private final boolean UseInternalJar = false;
     
     public void initXlet(XletContext context) {
         
@@ -41,16 +40,12 @@ public class InitXlet implements Xlet {
         screen.setVisible(true);
         scene.setVisible(true);
         
-        Status.println("Screen initialized");
+        Status.println(versionString);
         
         try {
             Status.println("Triggering sandbox escape exploit...");
             
-            if (!Exploit.disableSecurityManager()) {
-                ExploitInternal.disableSecurityManager();
-            }
-
-            Status.println(System.getSecurityManager() == null
+            Status.println(Exploit.disableSecurityManager()
                 ? "Exploit success - sandbox escape achieved"
                 : "Exploit failed - sandbox still active");
 
@@ -60,8 +55,6 @@ public class InitXlet implements Xlet {
         
         // Add sanity check
         if (System.getSecurityManager() == null) {
-            
-            boolean UseInternalJar = false;
 
             if (!UseInternalJar) {
                 try {
@@ -94,33 +87,6 @@ public class InitXlet implements Xlet {
     public void destroyXlet(boolean unconditional) {
         scene.remove(screen);
         scene = null;
-    }
-    
-    private void disableFileProxies() {        
-        try {
-            Class bdjFactoryClass = Class.forName("com.oracle.orbis.io.BDJFactory");
-            
-            Field instanceField = bdjFactoryClass.getDeclaredField("instance");
-            instanceField.setAccessible(true);
-            
-            Object currentInstance = instanceField.get(null);
-            Status.println("Current BDJFactory instance: " + 
-                (currentInstance != null ? currentInstance.getClass().getName() : "null"));
-            
-            // Null out the instance - this will make needProxy() return false
-            instanceField.set(null, null);
-            Status.println("BDJFactory instance set to null");
-            
-            Object newInstance = instanceField.get(null);
-            Status.println("New BDJFactory instance: " + 
-                (newInstance != null ? newInstance.getClass().getName() : "null"));
-            
-            Status.println("Setting java.io.tmpdir to /download0/BD_BUDA/javatmp");
-            System.setProperty("java.io.tmpdir", "/download0/BD_BUDA/javatmp");
-            
-        } catch (Exception e) {
-            Status.printStackTrace("Error disabling BDJFactory", e);
-        }
     }
     
 }

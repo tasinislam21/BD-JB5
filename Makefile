@@ -15,7 +15,7 @@
 # <http://www.gnu.org/licenses/>.
 
 
-DISC_LABEL := BD-UN-JB
+DISC_LABEL := BD-JB5-2.0
 
 #
 # Host tools
@@ -24,18 +24,19 @@ MAKEFILE_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
 BDJSDK_HOME  ?= $(MAKEFILE_DIR)/../../
 BDSIGNER     := $(BDJSDK_HOME)/host/bin/bdsigner
 MAKEFS       := $(BDJSDK_HOME)/host/bin/makefs
-JAVA8_HOME    ?= $(BDJSDK_HOME)/host/jdk8
+JAVA8_HOME   ?= $(BDJSDK_HOME)/host/jdk8
+JAVA11_HOME  ?= $(BDJSDK_HOME)/host/jdk11
 JAVAC        := $(JAVA8_HOME)/bin/javac
 JAR          := $(JAVA8_HOME)/bin/jar
 
 export JAVA8_HOME
-
+export JAVA11_HOME
 
 #
 # Compilation artifacts
 #
 CLASSPATH     := $(BDJSDK_HOME)/target/lib/enhanced-stubs.zip:$(BDJSDK_HOME)/target/lib/bdjstack.jar:$(BDJSDK_HOME)/target/lib/rt.jar
-SOURCES       := $(wildcard src/jdk/internal/misc/*.java) $(wildcard src/org/bdj/*.java) $(wildcard src/org/bdj/sandbox/*.java) $(wildcard src/org/bdj/api/*.java)
+SOURCES       := $(wildcard src/jdk/internal/misc/*.java) $(wildcard src/org/bdj/*.java) $(wildcard src/org/bdj/api/*.java) $(wildcard src/org/bdj/sandbox/*.java)
 JFLAGS        := -Xlint:-options -source 1.4 -target 1.4
 
 #
@@ -57,7 +58,8 @@ discdir:
 
 discdir/BDMV/JAR/00000.jar: discdir $(SOURCES)
 	$(JAVAC) $(JFLAGS) -cp $(CLASSPATH) $(SOURCES)
-	$(JAR) cf $@ -C src/ .	
+	$(JAR) cf $@ -C src/ .
+	$(BDSIGNER) -keystore $(BDJSDK_HOME)/resources/sig.ks $@
 
 discdir/%: discdir
 	cp $(BDJSDK_HOME)/resources/AVCHD/$* $@
@@ -66,8 +68,8 @@ discdir/%: discdir
 $(DISC_LABEL).iso: $(DISC_FILES)
 	cp -r BDMV/META discdir/BDMV/
 	cp -r BDMV/BDJO discdir/BDMV/
+	$(JAR) cfM discdir/BDMV/JAR/00001.jar -C 00001 .
 	$(MAKEFS) -m 16m -t udf -o T=bdre,v=2.50,L=$(DISC_LABEL) $@ discdir
 
 clean:
-	rm -rf META-INF $(DISC_LABEL).iso discdir src/jdk/internal/misc/*.class src/org/bdj/*.class src/org/bdj/sandbox/*.class src/org/bdj/api/*.class 
-    
+	rm -rf META-INF $(DISC_LABEL).iso discdir src/jdk/internal/misc/*.class src/org/bdj/*.class src/org/bdj/sandbox/*.class src/org/bdj/api/*.class

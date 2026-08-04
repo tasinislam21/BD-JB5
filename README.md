@@ -1,33 +1,32 @@
-# BD-UN-JB
+# BD-JB5
 
+PS5 Blu-ray Disc Java Sandbox Escape.  
+Supporting RemoteJarLoader, On-Screen Logging and Network Logging.  
+
+### Supported upto 13.42 firmware.  
+
+RemoteLogger server is listening on port 18194.  
+Use log_client.py to get the log.  
+I recommend running `log_client.py` first, then starting the BD-J app.  
+
+RemoteJarLoader server is listening on port 9025.  
+Use jar_client.py to send the jar file.  
+You can use any other TCP payload sender too.  
+Don't forget to set `Main-Class` in `manifest.txt`.  
+
+## To use at 13.60 and higher firmware
 **Note : YOU NEED ALREADY JAILBROKEN PS5**
 
-BD-UN-JB is RemoteJarLoader that can be used on already jailbroken PS5 upto 13.40 firmware.   
-It supports on-screen logging and network logging.  
+Send `bdj_unpatch.elf` to elfldr to unpatch BD-J.  
+`bdj_unpatch.elf` will backup existing `bdjstack.jar` to `bdjstack.jar.bak` just in case.  
 
-Send bdj_unpatch.elf to elfldr to unpatch BD-J.  
-bdj_unpatch.elf will backup existing bdjstack.jar to bdjstack.jar.bak just in case.  
-
-Then burn BD-UN-JB iso and run.  
+Now you will be able to use BD-JB.  
 
 **DO NOT REINSTALL FW, IT WILL WIPE THE PATCH AND LOSE BD-JB**
 
 ---
 
-RemoteLogger server is listening on port 18194.  
-Use log_client.py to get the log.  
-I recommend first running the log_client.py then starting the BD-J app.  
-
-RemoteJarLoader server is listening on port 9025.  
-Use jar_client.py to send the jar file.  
-You can use any other TCP payload sender too.  
-Don't forget to set Main-Class in manifest.txt.  
-
----
-
 Use john-tornblom's **[bdj-sdk](https://github.com/john-tornblom/bdj-sdk/)** and **[ps5-payload-sdk](https://github.com/ps5-payload-dev/sdk/)** for compiling.  
-
----
 
 ### Credits
 
@@ -38,37 +37,4 @@ Use john-tornblom's **[bdj-sdk](https://github.com/john-tornblom/bdj-sdk/)** and
 * **[kuba--](https://github.com/kuba--)** — [zip](https://github.com/kuba--/zip) used for bdj_unpatch elf payload.  
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
