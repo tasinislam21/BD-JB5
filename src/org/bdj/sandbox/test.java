@@ -15,16 +15,16 @@ public class test {
         SecurityManager sm = System.getSecurityManager();
         try {
         	if (sm == null) {
-                System.out.println("No SecurityManager");
+                System.out.println("No Security Manager");
             }
         	else {
-                System.out.println("SecurityManager still working!");
+                System.out.println("Security Manager still working!");
                 sm.checkPackageAccess("sun.launcher.LauncherHelper");
         	}
         	
         }
         catch (SecurityException e) {
-        	System.out.println("SM cannot access sun.launcher.LauncherHelper\"");
+        	System.out.println("SM cannot access sun.launcher.LauncherHelper");
         
         }
     }
