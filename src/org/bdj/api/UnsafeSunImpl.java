@@ -8,7 +8,7 @@
 package org.bdj.api;
 
 import java.lang.reflect.Field;
-import sun.misc.Unsafe;
+import jdk.internal.misc.Unsafe;
 
 class UnsafeSunImpl implements UnsafeInterface {
   private static final String UNSAFE_CLASS_NAME = "sun.misc.Unsafe";

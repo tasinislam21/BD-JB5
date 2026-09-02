@@ -1,0 +1,200 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: qBkkB6/LXEP8f+0PyvDf10DwKV0=
+Created-By: 1.8.0_502 (Private Build)
+BDJ-Signature-Version: 1.0
+
+Name: org/bdj/api/API.class
+SHA1-Digest: YG6KoT42JCRbW+/GYz4V74DzPqo=
+
+Name: org/bdj/api/Int64Array.class
+SHA1-Digest: IvvXENE7UD5sW9R5Ff0wpMlbDh8=
+
+Name: org/bdj/sandbox/Exploit.class
+SHA1-Digest: nRy8xurkGGhIgjix//m96kj9fi0=
+
+Name: sun/launcher/LauncherHelper.java
+SHA1-Digest: MH7IndCvViwLuUyc5zr8cRMCH2s=
+
+Name: org/bdj/api/Int64.class
+SHA1-Digest: PWw3kugThs4d2B44T6+PS3hzPQg=
+
+Name: org/bdj/sandbox/Exploit.java
+SHA1-Digest: J2h5YY+eOQI89QlNdedjEZRfgKs=
+
+Name: org/bdj/InternalJarLoader$1.class
+SHA1-Digest: KcLBT0L+IrTrzkxSTxurGam+qEg=
+
+Name: org/bdj/api/Text.class
+SHA1-Digest: Jq1RoKYnPCKQoUf+iHc1wu+HHvI=
+
+Name: org/bdj/RemoteJarLoader.java
+SHA1-Digest: UtwVDjZLDrN1S0IKAE0fMnnZsak=
+
+Name: org/bdj/RemoteLogger$1.class
+SHA1-Digest: u+l4DnqMHul50SXXVSKGdp409Qw=
+
+Name: org/bdj/RemoteLogger$2.class
+SHA1-Digest: x95Kg7KkZ7GJiFj+0qIC68wAROA=
+
+Name: jdk/internal/misc/Unsafe.java
+SHA1-Digest: Z1YRhFCvKdKlpupZatTrsLtT0Is=
+
+Name: org/bdj/api/UnsafeInterface.class
+SHA1-Digest: 46nHjLGQ6JYTgTrgZaQijqxnDEw=
+
+Name: org/bdj/InitXlet.class
+SHA1-Digest: ADYC7zArOz5MjezLMNzEPDtum58=
+
+Name: org/bdj/api/NativeInvoke.java
+SHA1-Digest: tNFLrQUBszSC84Z3aTZgHe8Yjis=
+
+Name: org/bdj/RemoteLogger.java
+SHA1-Digest: Anuzp4FLIm+cz1G17i9beqQchxA=
+
+Name: org/bdj/api/KernelAPI.java
+SHA1-Digest: ImwTvk1LTNVBrRxbZld9ghv8rPw=
+
+Name: org/bdj/api/UnsafeSunImpl.java
+SHA1-Digest: ibRc58SxoPetDtYMcLJFf5jdGcg=
+
+Name: org/bdj/Status.java
+SHA1-Digest: Jr1JiqyOSOkZbAnR9eW8L3/Lzu0=
+
+Name: org/bdj/InternalJarLoader.class
+SHA1-Digest: leVd6Wq0oYOOW5eYyUffzZil/TI=
+
+Name: org/bdj/api/API.java
+SHA1-Digest: AtlzVTwgXW6QoW3jJGkmN23vX6c=
+
+Name: org/bdj/api/Int32.java
+SHA1-Digest: uIiUnSUZutaQV/n+QjonkeW/3RE=
+
+Name: org/bdj/api/UnsafeInterface.java
+SHA1-Digest: vO9gdYNskKn+b3m5z1mwKJLTzL4=
+
+Name: org/bdj/Screen.class
+SHA1-Digest: Fpz1DfShL6Co3QiqdWvX2ECexsY=
+
+Name: org/bdj/api/Int16.java
+SHA1-Digest: c1p3hVY++UOUE7f9bGPJC1BMXyg=
+
+Name: org/bdj/api/Int32Array.class
+SHA1-Digest: 3Pkxw4i7CMrz750duvEzgLd2ZDw=
+
+Name: org/bdj/api/Int8Array.class
+SHA1-Digest: 2NwS7CN5nixDUiW7tklK7N0AGI4=
+
+Name: org/bdj/api/Int16Array.java
+SHA1-Digest: h9F3zNQr7vQJjp+Tj5rw08L53cc=
+
+Name: org/bdj/api/Buffer.class
+SHA1-Digest: +X7P7v6rMOwPq5wUur2+Zu4KkYY=
+
+Name: org/bdj/RemoteJarLoader$1.class
+SHA1-Digest: Y91bdGfeNu3jOtH7z1FVF5tlMx4=
+
+Name: org/bdj/api/Int16.class
+SHA1-Digest: qSaPdzusVhcJzCOclJGB23muesw=
+
+Name: org/bdj/api/Int8Array.java
+SHA1-Digest: Cugd7wzEaIyRZ3rbxPgVaMmC5lk=
+
+Name: org/bdj/api/Int64.java
+SHA1-Digest: pM7tX9hAFxRn/vhunU7EmY5xHzQ=
+
+Name: org/bdj/sandbox/Payload.class
+SHA1-Digest: 2CPupYpuTyc9tR+dC6hETzquMrU=
+
+Name: org/bdj/api/Int32Array.java
+SHA1-Digest: v0ntm6PlT7FK9X6jngey69CUvoc=
+
+Name: org/bdj/sandbox/Payload.java
+SHA1-Digest: JH5JgWfRqLLXoDws7m4KDJx/FX4=
+
+Name: org/bdj/api/Int64Array.java
+SHA1-Digest: tnSu/UvwK5i4owac8vw6gIsQSsE=
+
+Name: debug/test.java
+SHA1-Digest: QOACK5Q9oartUBvue9m/XkXoUa4=
+
+Name: org/bdj/api/Int8.class
+SHA1-Digest: BWhAk3attJNRnr+6j35NtKW/dXg=
+
+Name: org/bdj/Screen$2.class
+SHA1-Digest: 714wePCamEKLdmlVsyUj6a0X0Iw=
+
+Name: org/bdj/api/UnsafeJdkImpl.class
+SHA1-Digest: q3I3kjKiRHG+UDluW8w4sHf30YU=
+
+Name: org/bdj/sandbox/Exploit1342.java
+SHA1-Digest: lXhH4SLkyMIrPSEgLpOehe6OmnU=
+
+Name: org/bdj/Status.class
+SHA1-Digest: R+Je7iSIsWcwqEGuu+VhmRhjJhg=
+
+Name: org/bdj/api/Text.java
+SHA1-Digest: xdZ7lIiEeUFBxGpx3rRRqJl5xu4=
+
+Name: org/bdj/api/API$CallContext.class
+SHA1-Digest: ttEz2slrSHgIaLEPNR6vxvc+ZWo=
+
+Name: org/bdj/RemoteLogger.class
+SHA1-Digest: UU0GHUFX+Fd6Jpwf1CayQGWobmA=
+
+Name: jdk/internal/misc/Unsafe.class
+SHA1-Digest: hHWW2bE12Xw+cxg2fijVjLxIcU4=
+
+Name: org/bdj/InternalJarLoader.java
+SHA1-Digest: bpqfyQFZyAaNTpHkZJRY7Zry22c=
+
+Name: org/bdj/api/Int32.class
+SHA1-Digest: DgCaFgzrlEhaPMHeZsiHHtRPuSA=
+
+Name: org/bdj/RemoteLogger$ClientEndpoint.class
+SHA1-Digest: TnuY7K6zBW3MVslEny8EqcjmxoA=
+
+Name: org/bdj/api/NativeInvoke.class
+SHA1-Digest: B7aClOP043Ny/sdnhifPC15JTVk=
+
+Name: org/bdj/RemoteJarLoader.class
+SHA1-Digest: EYjE3ns64kGIuoWzbHyV6kl2v00=
+
+Name: org/bdj/Screen.java
+SHA1-Digest: vnchOsrd88Ha2b5qOh1kY6qpAUI=
+
+Name: org/bdj/api/UnsafeJdkImpl.java
+SHA1-Digest: yXPx8HjufcWfZzX0pfreDU3HaAQ=
+
+Name: org/bdj/sandbox/Exploit1342.class
+SHA1-Digest: pbbYRRIBrFTSiN+9J5X6DZk3de0=
+
+Name: org/bdj/sandbox/ExploitInternal.class
+SHA1-Digest: K1EJo9ExskGlBjp2ya0pWD4M3cQ=
+
+Name: org/bdj/api/Buffer.java
+SHA1-Digest: PdYQugkygnCLuVVH44doUtCnSbA=
+
+Name: org/bdj/InitXlet.java
+SHA1-Digest: ffpdiDebXKIaDWUIeF6Zn0o8Wok=
+
+Name: org/bdj/api/Int8.java
+SHA1-Digest: gR+Yv7geSTsLNwDDG+HqzOG28bQ=
+
+Name: sun/launcher/LauncherHelper.class
+SHA1-Digest: V44KfEEST5+riNDhH3m2BZ73LuU=
+
+Name: org/bdj/api/UnsafeSunImpl.class
+SHA1-Digest: tcgZpQuZ7ATVRzNt24wlkjD/60k=
+
+Name: org/bdj/api/KernelAPI.class
+SHA1-Digest: 2QAwyqFrmJRpjRFc2DNcRFdDUj4=
+
+Name: org/bdj/api/Int16Array.class
+SHA1-Digest: m4LVGk2a/PIon6Vxk4MYyybqyfI=
+
+Name: org/bdj/sandbox/ExploitInternal.java
+SHA1-Digest: oMF0kRkfoITZg2WjwV+Ui2mgooY=
+
+Name: org/bdj/Screen$1.class
+SHA1-Digest: WXnvhoxaKh2ls1cSOGVe2VVm+8I=
+

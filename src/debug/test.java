@@ -1,4 +1,4 @@
-package org.bdj.sandbox;
+package debug;
 
 public class test {
 
