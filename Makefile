@@ -14,7 +14,7 @@
 # along with this program; see the file COPYING. If not see
 # <http://www.gnu.org/licenses/>.
 
-DISC_LABEL := BD-JB5-2.1
+DISC_LABEL := BD-JB5-2.5
 
 #
 # Host tools
@@ -34,14 +34,12 @@ export JAVA11_HOME
 #
 # Compilation artifacts
 #
-CLASSPATH := $(BDJSDK_HOME)/target/lib/enhanced-stubs.zip
+CLASSPATH := $(BDJSDK_HOME)/target/lib/enhanced-stubs.zip:$(BDJSDK_HOME)/target/lib/rt.jar
 
 SOURCES := $(wildcard src/jdk/internal/misc/*.java) \
            $(wildcard src/org/bdj/*.java) \
            $(wildcard src/org/bdj/api/*.java) \
-           $(wildcard src/org/bdj/sandbox/*.java) \
-		   $(wildcard src/sun/launcher/*.java)
-
+           $(wildcard src/org/bdj/sandbox/*.java)
 
 JFLAGS := -Xlint:-options -source 1.4 -target 1.4
 
