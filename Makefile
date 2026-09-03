@@ -20,7 +20,7 @@ DISC_LABEL := BD-JB5-2.5
 # Host tools
 #
 MAKEFILE_DIR := $(dir $(realpath $(lastword $(MAKEFILE_LIST))))
-BDJSDK_HOME  ?= /home/dev/Documents/bdj-sdk
+BDJSDK_HOME  ?= /home/tasin/Documents/bdj-sdk
 BDSIGNER     := $(BDJSDK_HOME)/host/bin/bdsigner
 MAKEFS       := $(BDJSDK_HOME)/host/bin/makefs
 JAVA8_HOME   ?= /usr/lib/jvm/java-1.8.0-openjdk-amd64
@@ -39,8 +39,9 @@ CLASSPATH := $(BDJSDK_HOME)/target/lib/enhanced-stubs.zip:$(BDJSDK_HOME)/target/
 SOURCES := $(wildcard src/jdk/internal/misc/*.java) \
            $(wildcard src/org/bdj/*.java) \
            $(wildcard src/org/bdj/api/*.java) \
-           $(wildcard src/org/bdj/sandbox/*.java)
-
+           $(wildcard src/org/bdj/sandbox/*.java) \
+	   $(wildcard src/custom/stub/*.java)
+	   
 JFLAGS := -Xlint:-options -source 1.4 -target 1.4
 
 #
