@@ -1,8 +1,26 @@
 package debug;
 
 public class test {
+	
+	public static String fibonacciNumber() {
+	    int first = 0;
+	    int second = 1;
+	    String[] results = new String[10];
+
+	    for (int i = 0; i < 10; i++) {
+	        results[i] = String.valueOf(first);
+
+	        int next = first + second;
+	        first = second;
+	        second = next;
+	    }
+
+	    return String.join(" ", results);
+	}
+	
 
     public static void main(String[] args) {
+    	System.out.println(fibonacciNumber());
     	Class<?> clazz = null;
         try {
         	clazz = Class.forName("sun.launcher.LauncherHelper");
