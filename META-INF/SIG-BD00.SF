@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA1-Digest-Manifest: qUa5C4eNts/8CDHzR9wrdj41scQ=
+SHA1-Digest-Manifest: ATcrYDOv6UrxUuQ1qQFaGBhuLA8=
 Created-By: 1.8.0_502 (Private Build)
 BDJ-Signature-Version: 1.0
 
@@ -10,7 +10,7 @@ Name: org/bdj/api/Int64Array.class
 SHA1-Digest: IvvXENE7UD5sW9R5Ff0wpMlbDh8=
 
 Name: org/bdj/sandbox/Exploit.class
-SHA1-Digest: nRy8xurkGGhIgjix//m96kj9fi0=
+SHA1-Digest: atAXqZcnIL7eJpd4z03+OO+ircs=
 
 Name: sun/launcher/LauncherHelper.java
 SHA1-Digest: MH7IndCvViwLuUyc5zr8cRMCH2s=
@@ -19,7 +19,7 @@ Name: org/bdj/api/Int64.class
 SHA1-Digest: PWw3kugThs4d2B44T6+PS3hzPQg=
 
 Name: org/bdj/sandbox/Exploit.java
-SHA1-Digest: J2h5YY+eOQI89QlNdedjEZRfgKs=
+SHA1-Digest: o+OywP+ok+WSWM0aLIt7dkETARA=
 
 Name: org/bdj/InternalJarLoader$1.class
 SHA1-Digest: KcLBT0L+IrTrzkxSTxurGam+qEg=
@@ -29,6 +29,9 @@ SHA1-Digest: Jq1RoKYnPCKQoUf+iHc1wu+HHvI=
 
 Name: org/bdj/RemoteJarLoader.java
 SHA1-Digest: UtwVDjZLDrN1S0IKAE0fMnnZsak=
+
+Name: custom/stub/Stub.java
+SHA1-Digest: WKycrpE6toFFgqtwcVNZs09gyCI=
 
 Name: org/bdj/RemoteLogger$1.class
 SHA1-Digest: u+l4DnqMHul50SXXVSKGdp409Qw=
@@ -118,7 +121,7 @@ Name: org/bdj/api/Int8.class
 SHA1-Digest: BWhAk3attJNRnr+6j35NtKW/dXg=
 
 Name: debug/test.java
-SHA1-Digest: QOACK5Q9oartUBvue9m/XkXoUa4=
+SHA1-Digest: 1ZdsCVTGMqUYfo9a+pGwGUceUE0=
 
 Name: org/bdj/api/UnsafeJdkImpl.class
 SHA1-Digest: q3I3kjKiRHG+UDluW8w4sHf30YU=
@@ -173,6 +176,9 @@ SHA1-Digest: K1EJo9ExskGlBjp2ya0pWD4M3cQ=
 
 Name: org/bdj/api/Buffer.java
 SHA1-Digest: PdYQugkygnCLuVVH44doUtCnSbA=
+
+Name: custom/stub/Stub.class
+SHA1-Digest: 5QHGQTgOeQ3S4YrZbkvvHX3A7YI=
 
 Name: org/bdj/InitXlet.java
 SHA1-Digest: ffpdiDebXKIaDWUIeF6Zn0o8Wok=
