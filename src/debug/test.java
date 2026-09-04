@@ -29,8 +29,9 @@ public class test {
             System.out.println("Failed! The class does not exist or cannot be accessed.");
             
         }
-        
-        SecurityManager sm = System.getSecurityManager();
+    	SecurityManager sm = new SecurityManager();
+    	SecurityManager sm1 = new SecurityManager();
+    	System.setSecurityManager(sm);
         try {
         	if (sm == null) {
                 System.out.println("No Security Manager");
