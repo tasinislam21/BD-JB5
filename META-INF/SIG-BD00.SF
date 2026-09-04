@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA1-Digest-Manifest: ATcrYDOv6UrxUuQ1qQFaGBhuLA8=
+SHA1-Digest-Manifest: ctecIwLPwa/ZsBrxH6orrrYJyrQ=
 Created-By: 1.8.0_502 (Private Build)
 BDJ-Signature-Version: 1.0
 
@@ -10,7 +10,7 @@ Name: org/bdj/api/Int64Array.class
 SHA1-Digest: IvvXENE7UD5sW9R5Ff0wpMlbDh8=
 
 Name: org/bdj/sandbox/Exploit.class
-SHA1-Digest: atAXqZcnIL7eJpd4z03+OO+ircs=
+SHA1-Digest: giwYtghaNqxziyfr5cTk64lxDVU=
 
 Name: sun/launcher/LauncherHelper.java
 SHA1-Digest: MH7IndCvViwLuUyc5zr8cRMCH2s=
@@ -19,7 +19,7 @@ Name: org/bdj/api/Int64.class
 SHA1-Digest: PWw3kugThs4d2B44T6+PS3hzPQg=
 
 Name: org/bdj/sandbox/Exploit.java
-SHA1-Digest: o+OywP+ok+WSWM0aLIt7dkETARA=
+SHA1-Digest: yaI9guxdOcuIesFkC6zQrA1lKio=
 
 Name: org/bdj/InternalJarLoader$1.class
 SHA1-Digest: KcLBT0L+IrTrzkxSTxurGam+qEg=
